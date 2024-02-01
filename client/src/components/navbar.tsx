@@ -1,11 +1,14 @@
+import "../styling/navbar.css"
+import { Link } from "react-router-dom"
+
 function navbar () {
     return (
         <div className="navbar">
-            <h1 className="nav-title">Linus Rengbrandt</h1>
+            <Link to="/" className="nav-title"><h1>Linus Rengbrandt</h1></Link>
             <div className="nav-right">
-                <a href="/about">About</a>
-                <a href="/projects">Projects</a>
-                <a href="/contact">Contact</a>
+                <a>About</a>
+                <a>Projects</a>
+                <a>Contact</a>
             </div>
         </div>
     )
