@@ -1,10 +1,15 @@
-function App() {
+import { Outlet } from "react-router-dom"
+import Navbar from "./components/navbar.tsx"
+import './index.css'
 
-  return (
-    <>
-      <h1>Home</h1>
-    </>
-  )
+function App() {
+    
+    return ( 
+      <>
+        <Navbar />
+        <Outlet />
+      </>  
+    )
 }
 
 export default App
