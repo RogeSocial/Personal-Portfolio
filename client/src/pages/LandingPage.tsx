@@ -3,11 +3,14 @@ import "../styling/about-con.css";
 import "../styling/projects-con.css";
 import "../styling/contact-con.css";
 
+import { useState } from "react";
 import { handleSubmit } from "../components/ValidateInputs.tsx";
 
 import { Link } from "react-router-dom";
 
 function LandingPage() {
+  const [errorMessage, setErrorMessage] = useState('');
+
   return (
     <>
       <div className="home-container">
@@ -155,16 +158,18 @@ function LandingPage() {
 
       <div className="contact-container">
         <h1>
-          Interested in working together? <br></br>
+          Interested in working together? <br />
           Let's get in touch!
         </h1>
-        <form onSubmit={handleSubmit} name="contact-form">
+        <form onSubmit={(e) => handleSubmit(e, setErrorMessage)} name="contact-form">
+
           <label>Enter your name</label>
           <input type="text" id="name" />
           <label>Your email address</label>
           <input type="email" id="email" />
           <label>Describe your inquiry</label>
           <textarea id="message"></textarea>
+          {errorMessage && <div className="error-message">{errorMessage}</div>}
           <button type="submit">Contact me!</button>
         </form>
       </div>

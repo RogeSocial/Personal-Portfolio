@@ -95,3 +95,9 @@
     width: 100%;
     background-color: #ffffff;
   }
+
+  .error-message {
+    color: red;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
