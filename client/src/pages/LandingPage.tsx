@@ -3,6 +3,8 @@ import "../styling/about-con.css";
 import "../styling/projects-con.css";
 import "../styling/contact-con.css";
 
+import { handleSubmit } from "../components/ValidateInputs.tsx";
+
 import { Link } from "react-router-dom";
 
 function LandingPage() {
@@ -156,13 +158,13 @@ function LandingPage() {
           Interested in working together? <br></br>
           Let's get in touch!
         </h1>
-        <form>
+        <form onSubmit={handleSubmit} name="contact-form">
           <label>Enter your name</label>
-          <input type="text" />
+          <input type="text" id="name" />
           <label>Your email address</label>
-          <input type="email" />
+          <input type="email" id="email" />
           <label>Describe your inquiry</label>
-          <textarea></textarea>
+          <textarea id="message"></textarea>
           <button type="submit">Contact me!</button>
         </form>
       </div>
