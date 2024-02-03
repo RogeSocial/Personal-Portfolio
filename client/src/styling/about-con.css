@@ -1,0 +1,49 @@
+.about-container {
+  background-color: #22272f;
+  padding: 20px;
+  text-align: center;
+
+  text-decoration: none;
+  position: relative;
+}
+
+.about-container h1 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ffffff;
+  text-align: left;
+  margin-left: 200px;
+}
+
+.about-container h2 {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2.4em;
+  text-align: left;
+  margin-left: 200px;
+}
+
+.about-info {
+  font-size: 1.6em;
+  line-height: 1.6;
+  color: #c3cad5;
+  text-align: left;
+  margin-left: 200px;
+  margin-right: 50%;
+}
+
+.more-about p {
+  text-align: left;
+  margin-left: 200px;
+}
+
+.more-about {
+  color: #ffffff;
+  font-size: 1.6em;
+  text-decoration: none;
+  position: relative;
+}
+
+.highlight {
+  color: #075fe4;
+}
