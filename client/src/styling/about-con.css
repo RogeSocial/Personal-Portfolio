@@ -38,29 +38,11 @@
 }
 
 .more-about {
-    color: #ffffff;
-    font-size: 1.6em;
-    text-decoration: none;
-    position: relative; 
-  }
-  
-  .more-about::after {
-    content: '';
-    position: absolute;
-    width: 167px;
-    height: 4px;
-    bottom: -8px; 
-    margin-left: -975px;
-    background-color: #075fe4;
-    transform-origin: bottom right;
-    transform: scaleX(0);
-    transition: transform 0.25s ease-out;
-  }
-  
-  .more-about:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+  color: #ffffff;
+  font-size: 1.6em;
+  text-decoration: none;
+  position: relative;
+}
 
 .highlight {
   color: #075fe4;
