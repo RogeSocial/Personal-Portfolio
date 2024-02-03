@@ -1,6 +1,7 @@
 import "../styling/home-con.css";
 import "../styling/about-con.css";
 import "../styling/projects-con.css";
+import "../styling/contact-con.css";
 
 import { Link } from "react-router-dom";
 
@@ -151,11 +152,19 @@ function LandingPage() {
       </div>
 
       <div className="contact-container">
-        <h1>Contact</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident
-          vel dolorum exercitationem in quaerat nemo
-        </p>
+        <h1>Interested in working together? <br></br>
+        Let's get in touch!
+        </h1>
+        <form>
+          <label>Enter your name</label>
+          <input type="text"/>
+          <label>Your email address</label>
+          <input type="email"/>
+          <label>Describe your project</label>
+          <input type="text"/>
+          <textarea placeholder="Message"></textarea>
+          <button type="submit">Contact me!</button>
+        </form>
       </div>
     </>
   );
