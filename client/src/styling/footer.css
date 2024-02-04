@@ -4,7 +4,7 @@
     padding: 10px;
     font-size: 20px;
     font-weight: bold;
-    border-top: 1px solid #5D6C83;
+    border-top: 1px solid #5d6c83;
 }
 
 .footer-container {
@@ -22,12 +22,12 @@
 }
 
 .footer-profile h2 {
-    color: #5D6C83;
+    color: #5d6c83;
     font-size: 22px;
 }
 
 .footer-socials {
-    color: #5D6C83;
+    color: #5d6c83;
     margin-right: 10px;
     font-size: 35px;
 }
@@ -37,17 +37,39 @@
     transition: all ease-in-out 0.3s;
 }
 
-.footer-contact h1, p{
+.footer-contact h1,p {
     color: #ffffff;
 }
 
 .footer-contact h2 {
-    color: #5D6C83;
+    color: #5d6c83;
     font-size: 18px;
 }
 
+.footer-mail {
+    position: relative;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-mail::after {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #5d6c83;
+    transition: height 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-mail:hover::after {
+    width: 100%;
+    background-color: white;
+}
+
 .footer-nav {
-    border-top: 1px solid #5D6C83;
+    border-top: 1px solid #5d6c83;
     color: #ffffff;
     padding-top: 40px;
     margin-left: 400px;

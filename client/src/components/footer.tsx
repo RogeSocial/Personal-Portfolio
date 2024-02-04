@@ -30,7 +30,9 @@ function footer() {
                 <div className="footer-contact">
                     <h1>Get in touch</h1>
                     <h2>EMAIL ME:</h2>
-                    <p>linus@rengbrandt.com</p>
+                    <a className="footer-mail" href="mailto:linus@rengbrandt.com">
+                        linus@rengbrandt.com
+                    </a>
                 </div>
             </div>
             <div className="footer-nav">
