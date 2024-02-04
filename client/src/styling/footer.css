@@ -27,8 +27,14 @@
 }
 
 .footer-socials {
-    color: white;;
+    color: #5D6C83;
     margin-right: 10px;
+    font-size: 35px;
+}
+
+.footer-socials:hover {
+    color: #ffffff;
+    transition: all ease-in-out 0.3s;
 }
 
 .footer-contact h1, p{
@@ -53,14 +59,13 @@
     margin-right: 20px;
     color: #ffffff;
     text-decoration: none;
-    transition: color ease-in-out 0.3s; /* Apply transition only to the color property */
+    transition: color ease-in-out 0.3s;
 }
 
 .footer-nav a:hover {
-    color: #ffffff; /* Set color to white on hover for the current link */
+    color: #ffffff;
 }
 
 .footer-nav a:not(:hover) {
-    color: #5d6c83; /* Set color to gray for non-hovered links */
+    color: #5d6c83;
 }
-
