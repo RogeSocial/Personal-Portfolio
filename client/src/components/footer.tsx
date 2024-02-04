@@ -1,25 +1,27 @@
+import "../styling/footer.css"
+import { Link } from "react-router-dom"
+
 function footer () {
     return (
-        <div>
+        <div className="footer">
             <div className="footer-container">
                 <div className="footer-profile">
-                    <h1 className="footer-name">Linus Rengbrandt</h1>
-                    <h2 className="footer-ocupation">Fullstack Developer Student</h2>
-                </div>
-                <div className="footer-socials">
-                    <a href="https://github.com/RogeSocial" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/linus-rengbrandt-829421189/" target="_blank">LinkedIn</a>
+                    <h1>Linus Rengbrandt</h1>
+                    <h2>Fullstack Developer Student</h2>
+                    <a className="footer-socials" href="https://github.com/RogeSocial" target="_blank">GitHub</a>
+                    <a className="footer-socials" href="https://www.linkedin.com/in/linus-rengbrandt-829421189/" target="_blank">LinkedIn</a>
                 </div>
                 <div className="footer-contact">
-                    <h1 className="footer-contact">Get in touch</h1>
-                    <p>Email me:</p>
+                    <h1>Get in touch</h1>
+                    <h2>EMAIL ME:</h2>
                     <p>linus@rengbrandt.com</p>
                 </div>
             </div>
-            <div className="footer-links">
-                <a>About</a>
-                <a>Projects</a>
-                <a>Contact</a>
+            <div className="footer-nav">
+                <Link to="/">Home</Link>
+                <Link to="/">About</Link>
+                <Link to="/">Projects</Link>
+                <Link to="/">Contact</Link>
             </div>
         </div>
     )

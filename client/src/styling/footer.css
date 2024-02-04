@@ -1,0 +1,66 @@
+.footer {
+    background-color: #1b1f24;
+    height: 50vh;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-top: 1px solid #5D6C83;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 100px;
+}
+
+.footer-profile h1 {
+    color: #ffffff;
+}
+
+.footer-profile h2 {
+    color: #5D6C83;
+    font-size: 22px;
+}
+
+.footer-socials {
+    color: white;;
+    margin-right: 10px;
+}
+
+.footer-contact h1, p{
+    color: #ffffff;
+}
+
+.footer-contact h2 {
+    color: #5D6C83;
+    font-size: 18px;
+}
+
+.footer-nav {
+    border-top: 1px solid #5D6C83;
+    color: #ffffff;
+    padding-top: 40px;
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-top: 100px;
+}
+
+.footer-nav a {
+    margin-right: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color ease-in-out 0.3s; /* Apply transition only to the color property */
+}
+
+.footer-nav a:hover {
+    color: #ffffff; /* Set color to white on hover for the current link */
+}
+
+.footer-nav a:not(:hover) {
+    color: #5d6c83; /* Set color to gray for non-hovered links */
+}
+
