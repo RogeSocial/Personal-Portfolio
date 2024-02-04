@@ -8,12 +8,13 @@ import {
   createRoutesFromElements } from 'react-router-dom';
 
 import LandingPage from './pages/LandingPage.tsx'
+import AboutPage from './pages/AboutPage.tsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App/>}>
       <Route index element={<LandingPage/>} />
-      
+      <Route path="/about" element={<AboutPage/>} />
     </Route>
   )
 )
