@@ -67,3 +67,34 @@
     align-items: center;
     margin-top: 80px;
 }
+
+/* Third container */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1B1F24;
+    padding-left: 300px;
+    padding-right: 300px;
+    color: white;
+}
+
+.education h1 {
+    margin-top: 100px;
+}
+
+.education p {
+    color: #5d6c83;
+    font-size: 20px;
+    margin-right: 60%;
+    margin-bottom: 50px;
+}
+
+.education-info {
+    border-top: 1px solid #5d6c83;
+}
+
+.education-info-card {
+    border-bottom: 1px solid #5d6c83;
+}

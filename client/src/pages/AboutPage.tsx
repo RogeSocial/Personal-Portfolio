@@ -60,6 +60,40 @@ function AboutPage() {
           <img src={code2} alt="Code 2" width={550} className="rounded-image" />
         </div>
       </div>
+      <div className="education">
+        <h1>
+          <span className="highlight">/</span> Education
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+          voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+          fugiat iusto fuga praesentium optio, eaque rerum! Provident similique
+          accusantium nemo autem.
+        </p>
+        <div className="education-info">
+          <div className="education-info-card">
+            <h2>Hedda Anderssongymnasiet, Lund <span className="highlight">/</span> 2018-2021</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem.
+            </p>
+          </div>
+          <div className="education-info-card">
+          <h2>Teknikhögskolan, Lund <span className="highlight">/</span> 2022-2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              mollitia, molestiae quas vel sint commodi repudiandae consequuntur
+              voluptatum laborum numquam blanditiis harum quisquam eius sed odit
+              fugiat iusto fuga praesentium optio, eaque rerum! Provident
+              similique accusantium nemo autem.
+            </p>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
