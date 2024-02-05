@@ -42,7 +42,7 @@ function LandingPage() {
           is a step towards turning passion into expertise, as I strive to bring
           my long-held interest to life in the dynamic world of programming.
         </p>
-        <Link to="/" className="more-about">
+        <Link to="/about" className="more-about">
           <p>More about me</p>
         </Link>
       </div>

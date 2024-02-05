@@ -1,0 +1,100 @@
+/* First container */
+
+.highlight {
+    color: #075fe4;
+}
+
+.about-start {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1B1F24;
+    padding-left: 300px;
+    padding-right: 300px;
+    color: white;
+}
+
+.about-start h1 {
+    font-size: 50px;
+    margin-top: 250px;
+}
+
+.about-start p {
+    font-size: 20px;
+    margin-top: -10px;
+    margin-right: 800px;
+    color: #5d6c83;
+}
+
+/* Second container */
+
+.my-journey {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #22272f;
+    padding-left: 300px;
+    padding-right: 300px;
+    color: white;
+}
+
+.my-journey p {
+    color: #5d6c83;
+    font-size: 20px;
+}
+
+.my-journey h1 {
+    color: #ffffff;
+    margin-top: -30px;
+}
+
+.info-right {
+    text-align: left;
+    margin-left: 200px;
+}
+
+.info-left {
+    text-align: left;
+    margin-right: 200px;
+}
+
+.rounded-image {
+    border-radius: 10px;
+}
+  
+.code-info-container {
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+}
+
+/* Third container */
+
+.education {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #1B1F24;
+    padding-left: 300px;
+    padding-right: 300px;
+    color: white;
+}
+
+.education h1 {
+    margin-top: 100px;
+}
+
+.education p {
+    color: #5d6c83;
+    font-size: 20px;
+    margin-right: 60%;
+    margin-bottom: 50px;
+}
+
+.education-info {
+    border-top: 1px solid #5d6c83;
+}
+
+.education-info-card {
+    border-bottom: 1px solid #5d6c83;
+}
