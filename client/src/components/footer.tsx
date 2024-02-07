@@ -39,7 +39,7 @@ function footer() {
                 <Link to="/">Home</Link>
                 <Link to="/about">About</Link>
                 <Link to="/">Projects</Link>
-                <Link to="/">Contact</Link>
+                <Link to="/contact">Contact</Link>
             </div>
         </div>
     )
