@@ -1,27 +1,28 @@
+import "../styling/contact.css"
+
+import { useState } from "react";
+import { handleSubmit } from "../components/ValidateInputs.tsx";
+
 function ContactPage() {
-  return (
-    <div>
-      <h1>Feel free to contact me!</h1>
-      <form>
-        <label>
-          Name:
-          <input type="text" name="name" />
-        </label>
-        <br />
-        <label>
-          Email:
-          <input type="text" name="email" />
-        </label>
-        <br />
-        <label>
-          Message:
-          <textarea name="message" />
-        </label>
-        <br />
-        <input type="submit" value="Submit" />
-      </form>
-    </div>
-  );
+
+    const [errorMessage, setErrorMessage] = useState("");
+
+    return (
+        <div className="contact-page">
+            <form onSubmit={(e) => handleSubmit(e, setErrorMessage)} name="contact-form">
+                <h1>Contact Me</h1>
+                <label>Enter your name</label>
+                <input type="text" id="name" />
+                <label>Your email address</label>
+                <input type="email" id="email" />
+                <label>Describe your matter</label>
+                <textarea id="message"></textarea>
+                {errorMessage && <div className="error-message">{errorMessage}</div>}
+                <button type="submit">Contact me!</button>
+            </form>
+        </div>
+    );
 }
+
 
 export default ContactPage;
