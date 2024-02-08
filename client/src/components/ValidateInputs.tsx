@@ -1,3 +1,6 @@
+import emailjs from 'emailjs-com';
+import config from './config.json';
+
 export const handleSubmit = (
   e: React.FormEvent<HTMLFormElement>,
   setErrorMessage: React.Dispatch<React.SetStateAction<string>>) => {
@@ -21,5 +24,23 @@ export const handleSubmit = (
     return;
   }
 
-  return true;
+  const serviceID = config.REACT_APP_EMAILJS_SERVICE_ID;
+  const templateID = config.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const userID = config.REACT_APP_EMAILJS_USER_ID;
+  
+  emailjs.send(serviceID, templateID, {
+    from_name: name,
+    reply_to: email,
+    message: message
+  }, userID)
+  .then(() => {
+    console.log('Email sent successfully!');
+    // clear the form when the email is successfully sent
+    (document.getElementById("name") as HTMLInputElement).value = "";
+    (document.getElementById("email") as HTMLInputElement).value = "";
+    (document.getElementById("message") as HTMLInputElement).value = "";
+  }, (error) => {
+    console.error('Error sending email:', error);
+    setErrorMessage("Error sending email. Please try again later.");
+  });
 };

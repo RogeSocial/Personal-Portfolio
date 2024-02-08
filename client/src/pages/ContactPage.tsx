@@ -1,7 +1,7 @@
 import "../styling/contact.css"
 
 import { useState } from "react";
-import { handleSubmit } from "../components/ValidateInputs.tsx";
+import { handleSubmit } from "../components/ValidateInputs.js";
 
 function ContactPage() {
 
