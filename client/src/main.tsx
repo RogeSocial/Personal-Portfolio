@@ -9,12 +9,14 @@ import {
 
 import LandingPage from './pages/LandingPage.tsx'
 import AboutPage from './pages/AboutPage.tsx'
+import ContactPage from './pages/ContactPage.tsx';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App/>}>
       <Route index element={<LandingPage/>} />
       <Route path="/about" element={<AboutPage/>} />
+      <Route path="/contact" element={<ContactPage/>} />
     </Route>
   )
 )

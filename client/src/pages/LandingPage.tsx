@@ -4,7 +4,7 @@ import "../styling/projects-con.css";
 import "../styling/contact-con.css";
 
 import { useState } from "react";
-import { handleSubmit } from "../components/ValidateInputs.tsx";
+import { handleSubmit } from "../components/ValidateInputs.js";
 
 import { Link } from "react-router-dom";
 
